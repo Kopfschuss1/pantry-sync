@@ -1,0 +1,23 @@
+name: Pantry Sync
+version: "0.3.1"
+slug: pantry_sync
+description: Two-way shopping list sync between Pantry and Home Assistant.
+arch:
+  - amd64
+startup: application
+boot: manual
+homeassistant_api: true
+options:
+  pantry_email: ""
+  pantry_password: ""
+  household_id: ""
+  list_entity: ""
+  sync_enabled: false
+  notifications_enabled: false
+schema:
+  pantry_email: email
+  pantry_password: password
+  household_id: str?
+  list_entity: str?
+  sync_enabled: bool
+  notifications_enabled: bool
